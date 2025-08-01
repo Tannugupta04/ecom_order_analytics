@@ -3,31 +3,27 @@
 ## 🔧 Setup Instructions
 
 ### Step 1: Install Flask
-```bash
+
 pip install flask
 
 🚀 How to Run the Scripts
 1. Generate Synthetic Orders
 Creates orders.json with 1000–5000 randomly generated e-commerce orders.
 
-bash
-Copy code
-python data_generator.py
+
+# python data_generator.py
 2. Run Order Analytics
 Analyzes the orders and outputs key metrics to analytics_summary.json.
 
-bash
-Copy code
-python order_analytics.py
+# python order_analytics.py
 3. (Optional) Run the Flask API
 Serves the analytics via HTTP endpoints.
 
-bash
-Copy code
-python app.py
+
+# python app.py
 
 🌐 API Endpoints (via app.py)
-Endpoint	Description
+Endpo int	Description
 /summary	Returns all computed metrics (JSON)
 /user/<user_id>	Returns all orders placed by the specified user
 /daily_revenue	Returns daily revenue for the last 7 days
@@ -35,9 +31,13 @@ Endpoint	Description
 Example:
 
 http://127.0.0.1:5000/summary
+when visit on this we  get what i attached in screenshot:
+<img width="952" height="1572" alt="Screenshot 2025-08-01 221213" src="https://github.com/user-attachments/assets/f3c372e8-3f3d-42d2-afcf-73c9c4deeea1" />
 
 
 http://127.0.0.1:5000/user/U102 (Replace U102 with a real user ID)
+<img width="732" height="1034" alt="Screenshot 2025-08-01 221205" src="https://github.com/user-attachments/assets/972ddcb2-d86d-4927-8f6b-d86af7995a95" />
+
 
 http://127.0.0.1:5000/daily_revenue
 
